@@ -19,7 +19,7 @@ const QuoteBox = ({ quoteShowed, colorShowed, getNewQuote }) => {
       <div className="TextQuote" style={{color: colorShowed}}>"{quote}"</div>
       <div className="Author" style={{color: colorShowed}}>~ {author}</div>
       <div className="Links">
-        <a href="https://twitter.com/intent/tweet" className="Icon">
+        <a href={`https://twitter.com/intent/tweet?text=${quote}%0A%0A~${author}`} className="Icon">
           <FontAwesomeIcon icon={faTwitter} size="2x"/>
         </a>
         <button className="Button" style={{color: colorShowed}} onClick={getNewQuote}>New Quote</button>
