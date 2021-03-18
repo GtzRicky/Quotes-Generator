@@ -46,3 +46,21 @@ function App() {
 }
 
 export default App;
+
+
+/* 
+  const dispatch = useDispatch();
+  const quotes = useSelector((state) => state.quotes);
+
+  useEffect(() => {
+    dispatch(getQuotesThunk())
+  }, [dispatch]);
+
+  return (
+    <div className="App">
+      {
+        quotes.map((quote) => (
+          <li key={quote.id}> {quote.quote} </li>))
+      }
+  )
+*/
